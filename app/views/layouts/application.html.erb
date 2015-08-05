@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : 'Avant-Garde Modern Software Development' %></title>
+    <title><%= browser_title %></title></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -13,6 +13,10 @@
   </head>
 
   <body>
+
+    <div class='row'>
+      <h1 id='title'><%= yield(:title) %></h1>
+    </div>
 
     <%= yield %>
 
