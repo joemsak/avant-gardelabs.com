@@ -1,7 +1,7 @@
 <% provide(:title, 'Contact') %>
 
 <div class='row'>
-  <p>Thank you for taking a moment to get in touch with us. We're excited to work with great ideas and enthusiastic people. We're passionate about understanding your project's needs and delivering working software to you. We hope you're excited, too, because you're about to take the first step in a great journey.</p>
+  <p>Thank you for taking a moment to get in touch with us. We're excited to work with great ideas and enthusiastic people. We're passionate about understanding your project's needs and delivering working software to you. We hope you're excited, too, because you're about to take the first step on a great journey.</p>
 
   <p class='text-center'>
     Avant-Garde<br>
@@ -12,40 +12,60 @@
 </div>
 
 <div class='row'>
-  <div class='columns medium-3'>
-    <ul>
-      Mike, Co-Founder, CEO<br>
-      C, Java, .NET, HTML, CSS, Javascript
-      <li>(517) 862-7974</li>
-      <li><%= mail_to 'mike@avant-gardelabs.com' %></li>
+  <div class='columns medium-6'>
+    <ul class="vcard">
+      <li class="fn">Mike Eaton</li>
+      <li class='title'>Co-Founder, CEO</li>
+      <li class='note'>C, C#, Java, JavaScript, VB.net, HTML, CSS</li>
+      <li class='adr'>
+        <span class="locality">DeWitt</span>,
+        <span class="region">Michigan</span>
+        <span class="postal-code">48820</span>
+      </li>
+      <li class='tel'>(517) 862-7974</li>
+      <li class="email"><%= mail_to 'mike@avant-gardelabs.com' %></li>
+    </ul>
+
+    <ul class="vcard">
+      <li class="fn">Joe Sak</li>
+      <li class='title'>Co-Founder, Architect</li>
+      <li class='note'>Ruby, Javascript, HTML, CSS</li>
+      <li class='adr'>
+        <span class="locality">Montreal</span>,
+        <span class="region">Quebec</span>
+        <span class="postal-code">H2L 3Z9</span>
+      </li>
+      <li class='tel'>+1 (514) 652-6975</li>
+      <li class="email"><%= mail_to 'joe@avant-gardelabs.com' %></li>
+      <li class='note'>Joe is <strong>not</strong> authorized to work for Canadian businesses.</li>
     </ul>
   </div>
 
-  <div class='columns medium-3'>
-    <ul>
-      Joe, Co-Founder, Architect<br>
-      Ruby, HTML, CSS, Javascript
-      <li>(514) 652-6975</li>
-      <li><%= mail_to 'joe@avant-gardelabs.com' %></li>
-      <li>Joe is <strong>not</strong> authorized to work in Canada</li>
+  <div class='columns medium-6'>
+    <ul class="vcard">
+      <li class="fn">Eric Vogel</li>
+      <li class='title'>President, Lead Architect</li>
+      <li class='note'>C, C++, C#, .NET, Java, Lua</li>
+      <li class='adr'>
+        <span class="locality">Lansing</span>,
+        <span class="region">Michigan</span>
+        <span class="postal-code">48820</span>
+      </li>
+      <li class='tel'>+1 (517) 803-9442</li>
+      <li class="email"><%= mail_to 'eric@avant-gardelabs.com' %></li>
     </ul>
-  </div>
 
-  <div class='columns medium-3'>
-    <ul>
-      Eric, President, Lead Architect<br>
-      C, C++, C#, Java, .NET, Lua<br>
-      <li>(xxx) xxx-xxxx</li>
-      <li><%= mail_to 'eric@avant-gardelabs.com' %></li>
-    </ul>
-  </div>
-
-  <div class='columns medium-3'>
-    <ul>
-      Nicole, Business Analyst, Developer<br>
-      Ruby, HTML, CSS<br>
-      <li>(xxx) xxx-xxxx</li>
-      <li><%= mail_to 'nicole@avant-gardelabs.com' %></li>
+    <ul class="vcard">
+      <li class="fn">Nicole Eaton</li>
+      <li class='title'>Business Analyst, Developer</li>
+      <li class='note'>HR, Accounting, Legal, Ruby, HTML, CSS</li>
+      <li class='adr'>
+        <span class="locality">DeWitt</span>,
+        <span class="region">Michigan</span>
+        <span class="postal-code">48820</span></li>
+      </li>
+      <li class='tel'>+1 (517) 862-7396</li>
+      <li class="email"><%= mail_to 'nicole@avant-gardelabs.com' %></li>
     </ul>
   </div>
 </div>
