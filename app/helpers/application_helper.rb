@@ -8,4 +8,8 @@ module ApplicationHelper
       base_title
     end
   end
+
+  def active_if_selected(path)
+    'active' if request.path == path
+  end
 end

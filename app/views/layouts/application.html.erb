@@ -14,6 +14,13 @@
 
   <body>
 
+    <nav id='main_nav' class='row clearfix'>
+      <span id='logo'>Avant-Garde</span>
+      <%= link_to 'About', root_path, class: active_if_selected(root_path) %>
+      <%= link_to 'Portfolio', portfolio_path, class: active_if_selected(portfolio_path) %>
+      <%= link_to 'Contact', contact_path, class: active_if_selected(contact_path) %>
+    </nav>
+
     <div class='row'>
       <h1 id='title'><%= yield(:title) %></h1>
     </div>

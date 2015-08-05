@@ -1,0 +1,20 @@
+#main_nav {
+  margin-top: 1em;
+
+  a, span {
+    display: block;
+    float: left;
+    margin-right: 1em;
+    padding: 5px 10px;
+    background: $secondary-color;
+
+    &.active {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+
+  span {
+    background: none;
+  }
+}
