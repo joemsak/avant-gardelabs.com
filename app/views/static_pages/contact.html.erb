@@ -1,1 +1,51 @@
 <% provide(:title, 'Contact') %>
+
+<div class='row'>
+  <p>Thank you for taking a moment to get in touch with us. We're excited to work with great ideas and enthusiastic people. We're passionate about understanding your project's needs and delivering working software to you. We hope you're excited, too, because you're about to take the first step in a great journey.</p>
+
+  <p class='text-center'>
+    Avant-Garde<br>
+    4980 W. Lehman Rd.<br>
+    DeWitt, MI 48820<br>
+    <%= mail_to 'hello@avant-gardelabs.com' %>
+  </p>
+</div>
+
+<div class='row'>
+  <div class='columns medium-3'>
+    <ul>
+      Mike, Co-Founder, CEO<br>
+      C, Java, .NET, HTML, CSS, Javascript
+      <li>(517) 862-7974</li>
+      <li><%= mail_to 'mike@avant-gardelabs.com' %></li>
+    </ul>
+  </div>
+
+  <div class='columns medium-3'>
+    <ul>
+      Joe, Co-Founder, Architect<br>
+      Ruby, HTML, CSS, Javascript
+      <li>(514) 652-6975</li>
+      <li><%= mail_to 'joe@avant-gardelabs.com' %></li>
+      <li>Joe is <strong>not</strong> authorized to work in Canada</li>
+    </ul>
+  </div>
+
+  <div class='columns medium-3'>
+    <ul>
+      Eric, President, Lead Architect<br>
+      C, C++, C#, Java, .NET, Lua<br>
+      <li>(xxx) xxx-xxxx</li>
+      <li><%= mail_to 'eric@avant-gardelabs.com' %></li>
+    </ul>
+  </div>
+
+  <div class='columns medium-3'>
+    <ul>
+      Nicole, Business Analyst, Developer<br>
+      Ruby, HTML, CSS<br>
+      <li>(xxx) xxx-xxxx</li>
+      <li><%= mail_to 'nicole@avant-gardelabs.com' %></li>
+    </ul>
+  </div>
+</div>
