@@ -1,44 +1,42 @@
 <% provide(:title, 'Portfolio') %>
 
-<div class='row'>
+<div class='columns'>
   <p>Avant-Garde is brand new. Therefore, this page may feel a little light. However, we have over 35 years of combined professional experience. We've worked with startups, enterprise, small business, ecommerce, marketing, professional associations, universities, city and state governments, and more.</p>
 </div>
 
-<div class='row'>
-  <div class='columns small-4'>
-    Mike
-    <ul>
-      <li><%= link_to 'LinkedIn', 'https://www.linkedin.com/pub/michael-r-eaton/7/755/a75' %></li>
-      <li><%= link_to 'Résumé', '/resumes/mike.pdf' %></li>
-      <li><%= link_to 'Codeplex', 'https://www.codeplex.com/site/users/view/1badprogrammer' %></li>
-    </ul>
-  </div>
-
-  <div class='columns small-4'>
-    Joe
-    <ul>
-      <li><%= link_to 'joesak.com', 'http://joesak.com' %></li>
-      <li><%= link_to 'LinkedIn', 'https://www.linkedin.com/pub/joe-sak/b5/679/a8a' %></li>
-      <li><%= link_to 'Résumé', '/resumes/joe.pdf' %></li>
-      <li><%= link_to 'Github', 'http://github.com/joemsak' %></li>
-      <li><%= link_to 'Stack Overflow', 'http://stackoverflow.com/users/727977/hubble' %></li>
-    </ul>
-  </div>
-
-  <div class='columns small-4'>
-    Eric
-    <ul>
-      <li><%= link_to 'ericvogel.com', 'http://ericvogel.com' %></li>
-      <li><%= link_to 'LinkedIn', 'https://www.linkedin.com/pub/eric-vogel/0/b62/1b6' %></li>
-      <li><%= link_to 'Résumé', 'http://ericvogel.com/Resume.pdf' %></li>
-      <li><%= link_to 'Visual Studio Magazine', 'https://www.linkedin.com/pub/eric-vogel/0/b62/1b6#background-publications' %></li>
-      <li><%= link_to 'Github', 'http://github.com/vogelvision' %></li>
-      <li><%= link_to 'Codeplex', 'https://www.codeplex.com/site/users/view/vogeleric' %></li>
-    </ul>
-  </div>
+<div class='columns small-4'>
+  Mike
+  <ul>
+    <li><%= link_to 'LinkedIn', 'https://www.linkedin.com/pub/michael-r-eaton/7/755/a75' %></li>
+    <li><%= link_to 'Résumé', '/resumes/mike.pdf' %></li>
+    <li><%= link_to 'Codeplex', 'https://www.codeplex.com/site/users/view/1badprogrammer' %></li>
+  </ul>
 </div>
 
-<div class='row'>
+<div class='columns small-4'>
+  Joe
+  <ul>
+    <li><%= link_to 'joesak.com', 'http://joesak.com' %></li>
+    <li><%= link_to 'LinkedIn', 'https://www.linkedin.com/pub/joe-sak/b5/679/a8a' %></li>
+    <li><%= link_to 'Résumé', '/resumes/joe.pdf' %></li>
+    <li><%= link_to 'Github', 'http://github.com/joemsak' %></li>
+    <li><%= link_to 'Stack Overflow', 'http://stackoverflow.com/users/727977/hubble' %></li>
+  </ul>
+</div>
+
+<div class='columns small-4'>
+  Eric
+  <ul>
+    <li><%= link_to 'ericvogel.com', 'http://ericvogel.com' %></li>
+    <li><%= link_to 'LinkedIn', 'https://www.linkedin.com/pub/eric-vogel/0/b62/1b6' %></li>
+    <li><%= link_to 'Résumé', 'http://ericvogel.com/Resume.pdf' %></li>
+    <li><%= link_to 'Visual Studio Magazine', 'https://www.linkedin.com/pub/eric-vogel/0/b62/1b6#background-publications' %></li>
+    <li><%= link_to 'Github', 'http://github.com/vogelvision' %></li>
+    <li><%= link_to 'Codeplex', 'https://www.codeplex.com/site/users/view/vogeleric' %></li>
+  </ul>
+</div>
+
+<div class='clearfix'>
   <div class='portfolio-piece columns medium-6'>
     <%= link_to image_tag('portfolio/laurenmiller.png'), 'http://www.chicagotherapynow.com' %>
 
@@ -56,22 +54,20 @@
   </div>
 </div>
 
-<div class='row'>
-  <div class='portfolio-piece columns medium-4'>
-    <%= link_to image_tag('portfolio/rice-ostx.png'), 'http://www.openstaxcollege.org/about' %>
+<div class='portfolio-piece columns medium-4'>
+  <%= link_to image_tag('portfolio/rice-ostx.png'), 'http://www.openstaxcollege.org/about' %>
 
-    <p>OpenStax College is a nonprofit organization committed to improving student access to quality learning materials. Their free textbooks are developed and peer-reviewed by educators to ensure they are readable, accurate, and meet the scope and sequence requirements of college courses.</p>
-  </div>
+  <p>OpenStax College is a nonprofit organization committed to improving student access to quality learning materials. Their free textbooks are developed and peer-reviewed by educators to ensure they are readable, accurate, and meet the scope and sequence requirements of college courses.</p>
+</div>
 
-  <div class='portfolio-piece columns medium-4'>
-    <%= link_to image_tag('portfolio/greenstone-logo.png'), 'http://www.greenstonefcs.com/overview/' %>
+<div class='portfolio-piece columns medium-4'>
+  <%= link_to image_tag('portfolio/greenstone-logo.png'), 'http://www.greenstonefcs.com/overview/' %>
 
-    <p>GreenStone Farm Credit Services is one of America’s largest rural lenders. Headquartered in East Lansing, Michigan, GreenStone is the country's sixth largest association in the Farm Credit System. They are a $7.3 billion organization of more than 23,000 members with 36 branches throughout Michigan and northeast Wisconsin.</p>
-  </div>
+  <p>GreenStone Farm Credit Services is one of America’s largest rural lenders. Headquartered in East Lansing, Michigan, GreenStone is the country's sixth largest association in the Farm Credit System. They are a $7.3 billion organization of more than 23,000 members with 36 branches throughout Michigan and northeast Wisconsin.</p>
+</div>
 
-  <div class='portfolio-piece columns medium-4'>
-    <%= link_to image_tag('portfolio/RMCLogo.png'), 'http://www.rmcagency.com/' %>
+<div class='portfolio-piece columns medium-4'>
+  <%= link_to image_tag('portfolio/RMCLogo.png'), 'http://www.rmcagency.com/' %>
 
-    <p>Our GreenStone FCS contract is through the RMC Agency. Thank you RMC for bringing Avant-Garde a wonderful client! Recruitment Management Consultants (RMC) is a Michigan based, full-service Information Technology (IT) Consulting and Placement agency. The company offers highly experienced recruiting and account management professionals with the ability to service the diverse needs of Michigan companies seeking to employ top technical talent within the region - specializing in Applications, Infrastructure, and Communications expertise.</p>
-  </div>
+  <p>Our GreenStone FCS contract is through the RMC Agency. Thank you RMC for bringing Avant-Garde a wonderful client! Recruitment Management Consultants (RMC) is a Michigan based, full-service Information Technology (IT) Consulting and Placement agency. The company offers highly experienced recruiting and account management professionals with the ability to service the diverse needs of Michigan companies seeking to employ top technical talent within the region - specializing in Applications, Infrastructure, and Communications expertise.</p>
 </div>

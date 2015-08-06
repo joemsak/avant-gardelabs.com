@@ -14,18 +14,34 @@
 
   <body>
 
-    <nav id='main_nav' class='row'>
-      <span id='logo'>Avant-Garde</span>
-      <%= link_to 'About', root_path, class: active_if_selected(root_path) %>
-      <%= link_to 'Portfolio', portfolio_path, class: active_if_selected(portfolio_path) %>
-      <%= link_to 'Contact', contact_path, class: active_if_selected(contact_path) %>
-    </nav>
+    <header class='row'>
+      <%= link_to image_tag('avant-garde-logo-white.png'),
+                  root_path,
+                  class: 'left',
+                  id: 'logo' %>
 
-    <div class='row'>
-      <h1 id='title'><%= yield(:title) %></h1>
+      <nav id='main_nav' class='right'>
+        <%= link_to 'About',
+                    root_path,
+                    class: 'text-link ' + active_if_selected(root_path) %>
+
+        <%= link_to 'Portfolio',
+                    portfolio_path,
+                    class: 'text-link ' + active_if_selected(portfolio_path) %>
+
+        <%= link_to 'Contact',
+                    contact_path,
+                    class: 'text-link ' + active_if_selected(contact_path) %>
+      </nav>
+    </header>
+
+    <div id='content' class='row'>
+      <div class='columns'>
+        <h1 id='title'><%= yield(:title) %></h1>
+      </div>
+
+      <%= yield %>
     </div>
-
-    <%= yield %>
 
   </body>
 </html>

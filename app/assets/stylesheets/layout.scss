@@ -1,21 +1,23 @@
-#main_nav {
-  margin-top: 1em;
+body {
+  padding-top: 1em;
+}
 
-  a, span {
+#main_nav {
+  .text-link {
+    color: $white-smoke;
     display: block;
     float: left;
     margin-right: 1em;
-    padding: 0.5em 1em;
-    background: $secondary-color;
+    padding: 0.15em 0.25em;
 
-    &.active {
-      background: $primary-color;
+    &:hover, &.active {
       color: $white;
+      border-bottom: 4px solid $white-smoke;
     }
   }
+}
 
-  span {
-    padding: 0.5em 0;
-    background: none;
-  }
+#content {
+  margin-top: 1em;
+  background: $white-smoke;
 }

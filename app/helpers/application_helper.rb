@@ -10,6 +10,11 @@ module ApplicationHelper
   end
 
   def active_if_selected(path)
-    'active' if request.path == path
+    active_path?(path) ? 'active' : ''
+  end
+
+  private
+  def active_path?(path)
+    request.path == path
   end
 end
