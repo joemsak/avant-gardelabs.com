@@ -9,10 +9,20 @@ body {
     float: left;
     margin-right: 1em;
     padding: 0.15em 0.25em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 
     &:hover, &.active {
       color: $white;
-      border-bottom: 4px solid $white-smoke;
+      &:after  {
+        content: "";
+        border-bottom: 4px solid $white-smoke;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -0.15em;
+      }
     }
   }
 }
