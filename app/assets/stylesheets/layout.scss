@@ -3,6 +3,8 @@ body {
 }
 
 #main_nav {
+  transform: translateY(50%);
+
   .text-link {
     color: $white-smoke;
     display: block;
@@ -10,8 +12,6 @@ body {
     margin-right: 1em;
     padding: 0.15em 0.25em;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 
     &:hover, &.active {
       color: $white;
