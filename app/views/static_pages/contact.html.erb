@@ -1,6 +1,6 @@
 <% provide(:title, 'Contact') %>
 
-<div class='columns'>
+<% provide :page_intro do %>
   <h2>Let's build something great together</h2>
 
   <p>Thank you for taking a moment to get in touch with us. We're excited to work with great ideas and enthusiastic people. We're passionate about understanding your project's needs and delivering working software to you. We hope you're excited, too, because you're about to take the first step on a great journey.</p>
@@ -9,7 +9,7 @@
     Avant-Garde • 4980 W. Lehman Rd. • DeWitt, MI 48820 •
     <%= mail_to 'hello@avant-gardelabs.com' %>
   </p>
-</div>
+<% end %>
 
 <div class='columns medium-6'>
   <ul class="vcard">

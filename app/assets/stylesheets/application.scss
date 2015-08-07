@@ -2,14 +2,12 @@
 @import 'layout';
 @import 'portfolio';
 
-// Overwrite foundation here
-
 .vcard {
   border: none;
-}
 
-h2 {
-  color: $jet;
+  .small {
+    font-size: 0.75em;
+  }
 }
 
 .border {

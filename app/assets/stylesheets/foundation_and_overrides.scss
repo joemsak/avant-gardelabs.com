@@ -116,15 +116,15 @@ $jet         : #222222;
 $black       : #000000;
 
 // We use these as default colors throughout
-$primary-color: #2C5E2E;
-$secondary-color: #BDD4DE;
+$primary-color: #7D1935;
+$secondary-color: #F5F3EE;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-$body-bg: $jet;
+$body-bg: none;
 $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -213,7 +213,7 @@ $body-font-color: $jet;
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-$header-font-color: steelblue;
+$header-font-color: #4A96AD;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -269,7 +269,7 @@ $h5-font-size: rem-calc(17);
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
-// $anchor-text-decoration-hover: none;
+$anchor-text-decoration-hover: underline;
 // $anchor-font-color: $primary-color;
 // $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
 
