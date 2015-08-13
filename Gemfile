@@ -17,10 +17,10 @@ group :development, :test do
   gem 'spring'
 end
 
-
 gem 'underscore-rails', '~> 1.8'
 gem 'foundation-rails', '~> 5.5'
 gem 'friendly_id', '~> 5.1'
+
 group :test do
   gem 'pry-rails', '~> 0.3'
   gem 'pry-nav', '~> 0.2'

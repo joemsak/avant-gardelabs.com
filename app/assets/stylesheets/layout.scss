@@ -30,11 +30,11 @@
       text-decoration: none;
       &:after  {
         content: "";
-        border-bottom: 4px solid $primary-color;
+        border-bottom: 2px solid $primary-color;
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -0.15em;
+        bottom: -0.025em;
       }
     }
   }
