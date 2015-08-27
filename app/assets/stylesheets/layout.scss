@@ -5,6 +5,7 @@
 #page_intro {
   padding-top: 1em;
   background: #4A96AD;
+  margin-bottom: 1em;
 }
 
 #intro {
@@ -20,12 +21,19 @@
 @media only screen and (max-width: 40.063em) {
   #intro {
     background: $white;
+
     h2 {
+      margin-top: 1em;
+      line-height: 1em;
       color: #4A96AD;
     }
     p {
       color: #333;
     }
+  }
+
+  #page_intro {
+    margin-bottom: 0;
   }
 }
 
@@ -52,8 +60,4 @@
       }
     }
   }
-}
-
-#content {
-  margin-top: 1em;
 }
