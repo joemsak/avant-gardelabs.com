@@ -1,17 +1,31 @@
+#logo {
+  margin-bottom: 1em;
+}
+
 #page_intro {
   padding-top: 1em;
   background: #4A96AD;
 }
 
 #intro {
-  padding-top: 1em;
-
   h2 {
     color: $white-smoke;
   }
 
   p {
     color: $white;
+  }
+}
+
+@media only screen and (max-width: 40.063em) {
+  #intro {
+    background: $white;
+    h2 {
+      color: #4A96AD;
+    }
+    p {
+      color: #333;
+    }
   }
 }
 
