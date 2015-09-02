@@ -14,38 +14,26 @@
 
   <body>
 
-    <div id='page_intro'>
-      <div class='row'>
-        <header class='columns'>
-          <%= link_to image_tag('avant-garde-logo-white.png'),
-                      root_path,
-                      class: 'left',
-                      id: 'logo' %>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <div id='page_intro'>
+          <div class='row'>
+            <%= render 'layouts/medium_header' %>
+            <%= render 'layouts/small_header' %>
 
-          <nav id='main_nav' class='right'>
-            <%= link_to 'About',
-                        root_path,
-                        class: 'text-link ' + active_if_selected(root_path) %>
+            <div id='intro' class='columns'>
+              <%= yield(:page_intro) %>
+            </div>
+          </div>
+        </div>
 
-            <%= link_to 'Portfolio',
-                        portfolio_path,
-                        class: 'text-link ' + active_if_selected(portfolio_path) %>
+        <section id='content' class="row main-section">
+          <%= yield %>
+        </section>
 
-            <%= link_to 'Contact',
-                        contact_path,
-                        class: 'text-link ' + active_if_selected(contact_path) %>
-          </nav>
-        </header>
+        <a class="exit-off-canvas"></a>
 
-        <div id='intro' class='columns'>
-          <%= yield(:page_intro) %>
         </div>
       </div>
-    </div>
-
-    <div id='content' class='row'>
-      <%= yield %>
-    </div>
-
   </body>
 </html>

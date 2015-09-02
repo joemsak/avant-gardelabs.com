@@ -1,0 +1,26 @@
+<nav class="show-for-small-only tab-bar">
+  <section class="show-for-small-only middle tab-bar-section">
+    <h1 class='title'>Avant-Garde</h1>
+  </section>
+
+  <section class="right-small">
+    <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+  </section>
+</nav>
+
+<aside class="right-off-canvas-menu">
+  <ul class="off-canvas-list">
+    <li><label>Avant-Garde</label></li>
+    <li><%= link_to 'About',
+                    root_path,
+                    class: 'text-link ' + active_if_selected(root_path) %></li>
+
+    <li><%= link_to 'Portfolio',
+                    portfolio_path,
+                    class: 'text-link ' + active_if_selected(portfolio_path) %></li>
+
+    <li><%= link_to 'Contact',
+                    contact_path,
+                    class: 'text-link ' + active_if_selected(contact_path) %></li>
+  </ul>
+</aside>
